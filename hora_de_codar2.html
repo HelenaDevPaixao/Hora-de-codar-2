@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //exercicio 1
+        var numero1 = prompt("Exercicio 1 - Digite o primeiro número:");
+        var numero2 = prompt("Exercicio 1 - Digite o segundo número:");
+
+        numero1 = Number(numero1);
+        numero2 = Number(numero2);
+
+        var maiorNumero;
+        if (numero1 > numero2) {
+        maiorNumero = numero1;
+      }     
+       else {
+       maiorNumero = numero2;
+      }
+
+       alert("O maior número é: " + maiorNumero);
+
+
+
+       //exercicio 2
+       var numero1 = prompt("Exercicio 2 - Digite o primeiro número:");
+       var numero2 = prompt("Exercicio 2 - Digite o segundo número:");
+       var numero3 = prompt("Exercicio 2 - Digite o terceiro número:");
+
+       numero1 = Number(numero1);
+       numero2 = Number(numero2);
+       numero3 = Number(numero3);
+
+       var maiorNumero = Math.max(numero1, numero2, numero3);
+
+       alert("O maior número é: " + maiorNumero);
+
+
+
+      //exercicio 3
+      var numero = prompt("Exercicio 3 - Digite um número positivo ou negativo:");
+
+      numero = Number(numero);
+
+      if (numero > 0) {
+      alert("O número " + numero + " é positivo.");
+      }   
+      else if (numero < 0)
+       {
+      alert("O número " + numero + " é negativo.");
+      }   
+      else {
+      alert("O número é zero.");
+      }
+
+
+      //exercicio 4
+
+      var numero1 = prompt("Exercicio 4 - Digite o primeiro número:");
+      var numero2 = prompt("Exercicio 4 - Digite o segundo número:");
+      var numero3 = prompt("Exercicio 4 - Digite o terceiro número:");
+
+      numero1 = Number(numero1);
+      numero2 = Number(numero2);
+      numero3 = Number(numero3);
+
+      var maiorNumero = Math.max(numero1, numero2, numero3);
+      var segundoMaiorNumero;
+
+      if (maiorNumero === numero1) {
+      segundoMaiorNumero = Math.max(numero2, numero3);
+      }
+      else if (maiorNumero === numero2)
+      {
+      segundoMaiorNumero = Math.max(numero1, numero3);
+      } else {
+      segundoMaiorNumero = Math.max(numero1, numero2);
+      }
+
+      var somaDosMaiores = maiorNumero + segundoMaiorNumero;
+
+      alert("A soma dos dois maiores números é: " + somaDosMaiores);
+
+
+
+      //exercicio 5
+      var numero1, numero2, numero3, numero4, numero5, numero6, soma, media;
+
+
+      numero1 = prompt("Exercicio 5 - Digite o primeiro número:");
+      numero2 = prompt("Exercicio 5 - Digite o segundo número:");
+      numero3 = prompt("Exercicio 5 - Digite o terceiro número:");
+      numero4 = prompt("Exercicio 5 - Digite o quarto número:");
+      numero5 = prompt("Exercicio 5 - Digite o quinto número:");
+      numero6 = prompt("Exercicio 5 - Digite o sexto número:");
+
+
+      numero1 = Number(numero1);
+      numero2 = Number(numero2);
+      numero3 = Number(numero3);
+      numero4 = Number(numero4);
+      numero5 = Number(numero5);
+      numero6 = Number(numero6);
+
+      soma = numero1 + numero2 + numero3 + numero4 + numero5 + numero6;
+
+      media = soma / 6;
+
+     alert("Os números informados foram: " + numero1 + ", " + numero2 + ", " + numero3 + ", " + numero4 + ", " + numero5 + " e " + numero6 + ". A média aritmética é: " + media);
+
+
+     //exercicio 6
+     var numero1 = prompt("Exercicio 6 - Digite o primeiro número:");
+     var numero2 = prompt("Exercicio 6 - Digite o segundo número:");
+     var numero3 = prompt("Exercicio 6 - Digite o terceiro número:");
+     var numero4 = prompt("Exercicio 6 - Digite o quarto número:");
+
+     numero1 = Number(numero1);
+     numero2 = Number(numero2);
+     numero3 = Number(numero3);
+     numero4 = Number(numero4);
+
+     var maiorNumero = Math.max(numero1, numero2, numero3, numero4);
+
+     alert("O primeiro número é: " + numero1 + "\n" +
+      "O último número é: " + numero4 + "\n" +
+      "O maior número é: " + maiorNumero);
+
+
+      //exercicio 7
+     var numero1, numero2, numero3, numero4, numero5, numero6, soma;
+     var numero1 = prompt("Exercicio 7 - Digite o primeiro número:");
+     var numero2 = prompt("Exercicio 7 - Digite o segundo número:");
+     var numero3 = prompt("Exercicio 7 - Digite o terceio número:");
+     var numero4 = prompt("Exercicio 7 - Digite o quarto número:");
+     var numero5 = prompt("Exercicio 7 - Digite o quinto número:");
+     var numero6 = prompt("Exercicio 7 - Digite o sexto número:");
+     
+
+     numero1 = Number(numero1);
+     numero2 = Number(numero2);
+     numero3 = Number(numero3);
+     numero4 = Number(numero4);
+     numero5 = Number(numero5);
+     numero6 = Number(numero6);
+    
+     soma = 0;
+     if (numero1 < 72) {
+     soma += numero1;
+     }
+     if (numero2 < 72) {
+     soma += numero2;
+     }
+     if (numero3 < 72) {
+     soma += numero3;
+     }
+     if (numero4 < 72) {
+     soma += numero4;
+     }
+     if (numero5 < 72) {
+     soma += numero5;
+     }
+     if (numero6 < 72) {
+     soma += numero6;
+     }
+
+     alert("Os números informados foram: " + numero1 + ", " + numero2 + ", " + numero3 + ", " + numero4 + ", " + numero5 + " e " + numero6 + ".\n" +
+     "A soma dos números inferiores a 72 é: " + soma);
+
+
+     //exercicio 8
+    
+     var numero1, numero2, numero3, numero4, soma, media;
+
+
+     numero1 = prompt("Exercicio 8 - Digite o primeiro número:");
+     numero2 = prompt("Exercicio 8 - Digite o segundo número:");
+     numero3 = prompt("Exercicio 8 - Digite o terceiro número:");
+     numero4 = prompt("Exercicio 8 - Digite o quarto número:");
+
+     numero1 = Number(numero1);
+     numero2 = Number(numero2);
+     numero3 = Number(numero3);
+     numero4 = Number(numero4);
+
+     if (numero1 >= 0 && numero1 <= 10 && numero2 >= 0 && numero2 <= 10 && numero3 >= 0 && numero3 <= 10 && numero4 >= 0 && numero4 <= 10) {
+  
+     soma = numero1 + numero2 + numero3 + numero4;
+     media = soma / 4;
+  
+     if (media > 5) {
+     alert("Você passou no teste!");
+     } else {
+     alert("Tente novamente.");
+     }
+  
+     } else {
+     alert("Os números informados devem estar no intervalo de 0 a 10. Tente novamente.");
+     }
+
+
+     //exercicio 9
+     var anoNascimento = prompt("Exercicio 9 - Digite o ano de seu nascimento:");
+
+     anoNascimento = Number(anoNascimento);
+
+     var anoAtual = new Date().getFullYear();
+
+     var idade = anoAtual - anoNascimento;
+
+     if (idade >= 16) {
+     alert("Você pode votar este ano!");
+     } else {
+     alert("Você ainda não pode votar este ano...");
+     }
+
+
+     //exercicio 10
+     
+     var numero1 = prompt("Exercicio 10 - Digite o primeiro número:");
+     var numero2 = prompt("Exercicio 10 - Digite o segundo número:");
+     var operacao = prompt("Exercicio 10 - Digite a operação a ser executada (1 = Adição, 2 = Subtração, 3 = Divisão, 4 = Multiplicação):");
+
+ 
+     numero1 = Number(numero1);
+     numero2 = Number(numero2);
+     operacao = Number(operacao);
+
+ 
+     var resultado;
+     if (operacao === 1) {
+     resultado = num1 + num2;
+     } else if (operacao === 2) {
+     resultado = num1 - num2;
+     } else if (operacao === 3) {
+      resultado = num1 / num2;
+     } else if (operacao === 4) {
+      resultado = num1 * num2;
+     } else {
+     alert("Operação inválida.");
+     }
+     if (resultado !== undefined) {
+      alert("O resultado da operação é: " + resultado);
+     }
+
+
+
+
+
+    </script>
+</body>
+</html>
